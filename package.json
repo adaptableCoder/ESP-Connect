@@ -1,5 +1,5 @@
 {
-  "name": "btconnect_esp32",
+  "name": "esp32_btapp",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -10,9 +10,15 @@
     "test": "jest"
   },
   "dependencies": {
+    "@react-native/new-app-screen": "0.80.1",
+    "@react-navigation/native": "^7.1.14",
+    "@react-navigation/native-stack": "^7.3.21",
     "react": "19.1.0",
     "react-native": "0.80.1",
-    "@react-native/new-app-screen": "0.80.1"
+    "react-native-bluetooth-classic": "^1.73.0-rc.13",
+    "react-native-rename": "^3.2.16",
+    "react-native-safe-area-context": "^5.5.1",
+    "react-native-screens": "^4.11.1"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
