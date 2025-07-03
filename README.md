@@ -16,6 +16,16 @@ A React Native Android application for establishing **Bluetooth Classic (SPP)** 
 
 ---
 
+## 🚀 APK File
+
+You can find the APK file for this app in the root directory itself.
+```
+../app-release.apk
+```
+Simply download this file in your Android phone and run it to install the app.
+
+---
+
 ## 🛠 Running Locally (for Developers)
 
 > **Platform Support:** Android only  
