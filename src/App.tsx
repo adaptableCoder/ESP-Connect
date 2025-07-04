@@ -12,6 +12,8 @@ import Chat from './screens/Chat'
 import BluetoothDevice from 'react-native-bluetooth-classic/lib/BluetoothDevice'
 import GetStartedScreen from './screens/GetStarted'
 
+import Orientation from 'react-native-orientation-locker';
+
 export type RootStackParamList = {
   Home: undefined;
   GetStarted: undefined;
@@ -24,6 +26,9 @@ const Stack = createNativeStackNavigator<RootStackParamList>();
 function App(): JSX.Element {
 
   useEffect(() => {
+    // Lock orientation to portrait
+    Orientation.lockToPortrait();
+
     const requestPermissions = async () => {
       try {
         const granted = await PermissionsAndroid.requestMultiple([
@@ -45,6 +50,11 @@ function App(): JSX.Element {
     };
 
     requestPermissions();
+
+     // Cleanup function to unlock orientation when component unmounts
+    return () => {
+      Orientation.unlockAllOrientations();
+    };
   }, [])
 
   return (
