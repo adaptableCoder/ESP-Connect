@@ -151,5 +151,6 @@ This guide covers:
 ## 📚 Resources
 
 - [React Native Docs](https://reactnative.dev/docs/getting-started)
+- [React Native YouTube Tutorial](https://www.youtube.com/playlist?list=PLRAV69dS1uWSjBBJ-egNNOd4mdblt1P4c)
 - [ESP32 Bluetooth Classic (SPP)](https://randomnerdtutorials.com/esp32-bluetooth-classic-arduino/)
 - [Bluetooth Classic Plugin](https://github.com/kenjdavidson/react-native-bluetooth-classic)
